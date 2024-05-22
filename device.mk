@@ -10,6 +10,11 @@ $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# RisingOS
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Snapdragon 732G" \
+    RISING_MAINTAINER="KernelPanix"
+
 # Audio
 PRODUCT_PACKAGES += \
     libtinycompress \

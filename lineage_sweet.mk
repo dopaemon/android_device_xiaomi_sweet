@@ -14,6 +14,22 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Google Apps
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+# whether to ship aperture camera, default is false
+PRODUCT_NO_CAMERA := false
+
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := lineage_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi

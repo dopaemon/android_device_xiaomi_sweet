@@ -12,6 +12,10 @@ DEVICE_PATH := device/xiaomi/sweet
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sweet,sweetin
 
+# Ignore overriding commands errors
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
